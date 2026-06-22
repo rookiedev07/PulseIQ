@@ -7,7 +7,7 @@ from google.genai import types
 app = Flask(__name__)
 CORS(app)
 
-API_KEY = os.environ.get("GOOGLE_API_KEY", "AIzaSyBFd_Qfrtp_0VPBxWQe6hkX-Bu44W5tolM")
+API_KEY = os.environ.get("GOOGLE_API_KEY")
 MODEL_ID = "gemini-2.5-flash"
 VITALS_FILE = "wearable_data.json"
 ACTIVITY_FILE = "activity.json"
